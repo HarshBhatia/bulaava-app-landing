@@ -44,7 +44,7 @@
 
 body {
   color: #777777;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.625em;
@@ -614,6 +614,9 @@ td, th {
   @media (max-width: 991px) {
     .section-gap {
       padding: 70px 0; } }
+
+.section-small-gap {
+  padding: 50px 0; }
 
 .section-gap-top {
   padding-top: 150px; }
@@ -1634,8 +1637,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997; }
 
 .header-scrolled {
-  background: rgba(255, 154, 158, 0.9);
+  background: #fff;
+  box-shadow: -2px -4px 20px 0px rgba(32, 41, 50, 0.12);
   transition: all 0.5s; }
+  .header-scrolled .nav-menu a {
+    color: #000; }
 
 @media (max-width: 673px) {
   #logo {
@@ -1727,8 +1733,8 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-weight: 500;
   font-size: 15px;
+  font-weight: bold;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
   outline: none; }
@@ -1776,7 +1782,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav-toggle i {
   color: #fff;
-  font-weight: 900; }
+  font-weight: 900;
+  transition: all 250ms ease-out 0s; }
+
+.nav-scroll #mobile-nav-toggle i {
+  color: #000;
+  transition: all 250ms ease-out 0s; }
+
+.mobile-nav-active #mobile-nav-toggle i {
+  color: #fff;
+  transition: all 250ms ease-out 0s; }
 
 @media (max-width: 960px) {
   #mobile-nav-toggle {
@@ -1864,6 +1879,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 .home-banner-area {
   background: url(../img/home-banner-bg.jpg) center;
   background-size: cover; }
+  @media (max-width: 991px) {
+    .home-banner-area {
+      background-position: 20% 0; } }
   .home-banner-area .banner-img {
     text-align: right; }
     @media (max-width: 1440px) {
@@ -1915,7 +1933,7 @@ body.mobile-nav-active #mobile-nav-toggle {
           color: #222222; } }
 
 .home-banner-content h1 {
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 25px; }
   @media (max-width: 991.98px) {
     .home-banner-content h1 {
@@ -1962,7 +1980,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 20px 0; }
   @media (max-width: 413px) {
     .home-about-right h1 {
-      font-size: 30px; }
+      font-size: 36px; }
       .home-about-right h1 br {
         display: none; } }
 .home-about-right p {
@@ -1974,6 +1992,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .about-video-area {
   position: relative; }
+  .about-video-area h1 {
+    padding: 20px 0; }
   .about-video-area .vdo-bg:before, .about-video-area .vdo-bg:after {
     content: "";
     position: absolute;
@@ -1988,6 +2008,42 @@ body.mobile-nav-active #mobile-nav-toggle {
     right: 0;
     width: 70%;
     background: #ffffff; }
+  .about-video-area .tutorialcard {
+    background-color: white;
+    -webkit-box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01) l;
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: all 0.625s cubic-bezier(0, 0, 0.2, 1); }
+    .about-video-area .tutorialcard:hover {
+      background-color: white;
+      -webkit-box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.05); }
+    .about-video-area .tutorialcard h3 {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 8px; }
+  .about-video-area #steps1:before,
+  .about-video-area #steps2:before,
+  .about-video-area #steps3:before {
+    content: '';
+    height: 100%;
+    top: -5px;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    background-image: url(../img/elements/number1.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    margin-left: -20px;
+    width: 40px; }
+  .about-video-area #steps2:before {
+    background-image: url(../img/elements/number2.svg); }
+  .about-video-area #steps3:before {
+    background-image: url(../img/elements/number3.svg); }
 
 .about-video-right {
   background: url(../img/video-bg.png) no-repeat center;
@@ -2072,7 +2128,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .testimonials-area.about-page .container::before {
     display: none; }
   .testimonials-area .heading {
-    font-size: 49px;
+    font-size: 36px;
     margin-bottom: 50px;
     text-align: center; }
   .testimonials-area .owl-thumb-item {
@@ -2126,7 +2182,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     top: 20%;
     left: 31%;
     width: 69%;
-    height: 188%;
+    height: 100%;
     background: linear-gradient(to bottom left, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
     background: -webkit-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
     background: -moz-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f8fcff 50%, #fcfdff 100%);
@@ -3217,13 +3273,49 @@ body.mobile-nav-active #mobile-nav-toggle {
     border: 0; }
     .footer-area .single-footer-widget .click-btn span {
       font-weight: 500; }
+  .footer-area .contact {
+    display: flex; }
+    .footer-area .contact img {
+      width: 30px;
+      margin-right: 10px; }
+    .footer-area .contact a {
+      color: #fad0c4;
+      margin-right: 30px; }
+      .footer-area .contact a:hover {
+        opacity: 0.8; }
+    @media (max-width: 991px) {
+      .footer-area .contact {
+        display: grid;
+        grid-gap: 10px; } }
+  .footer-area .links {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end; }
+    .footer-area .links a {
+      margin-left: 20px;
+      display: block;
+      color: #fad0c4; }
+      .footer-area .links a:hover {
+        opacity: 0.8; }
+    @media (max-width: 991px) {
+      .footer-area .links {
+        display: block;
+        margin-top: 30px;
+        text-align: left; }
+        .footer-area .links a {
+          margin: 0; } }
   .footer-area .footer-bottom {
-    margin-top: 90px; }
+    margin-top: 30px; }
     @media (max-width: 991px) {
       .footer-area .footer-bottom {
         margin-top: 20px; } }
     .footer-area .footer-bottom .footer-text {
-      color: #fff; }
+      color: #fff;
+      text-align: center;
+      font-size: 0.9em; }
+      @media (max-width: 991px) {
+        .footer-area .footer-bottom .footer-text {
+          text-align: left; } }
       .footer-area .footer-bottom .footer-text a,
       .footer-area .footer-bottom .footer-text span {
         color: #ff9a9e; }

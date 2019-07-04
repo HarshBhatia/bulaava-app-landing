@@ -1,7 +1,11 @@
+$heading-fontsize: 36px;
 //--------- Start Banner Area -------------//
 .home-banner-area {
   background: url(../img/home-banner-bg.jpg) center;
   background-size: cover;
+  @media (max-width: 991px) {
+    background-position: 20% 0;
+  }
   .banner-img {
     text-align: right;
     @media (max-width: 1440px) {
@@ -71,7 +75,7 @@
 
 .home-banner-content {
   h1 {
-    font-size: 50px;
+    font-size: $heading-fontsize;
     margin-bottom: 25px;
     @include media-breakpoint-down(md) {
       font-size: 36px;
@@ -160,7 +164,7 @@
   h1 {
     padding: 20px 0;
     @media (max-width: 413px) {
-      font-size: 30px;
+      font-size: $heading-fontsize;
       br {
         display: none;
       }
@@ -181,6 +185,9 @@
 //--------- Start about-video Area -------------//
 .about-video-area {
   position: relative;
+  h1{
+    padding: 20px 0;
+  }
   .vdo-bg {
     &:before,
     &:after {
@@ -200,6 +207,48 @@
       width: 70%;
       background: #ffffff;
     }
+  }
+  .tutorialcard {
+    background-color: white;
+    -webkit-box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01);
+    box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.01)l;
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: all 0.625s cubic-bezier(0, 0, 0.2, 1);
+    &:hover {
+      background-color: white;
+      -webkit-box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 8px 26px 2px rgba(0, 0, 0, 0.05);
+    }
+    h3{
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  }
+  #steps1:before,
+  #steps2:before,
+  #steps3:before {
+    content: '';
+    height: 100%;
+    top: -5px;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    background-image: url(../img/elements/number1.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    margin-left: -20px;
+    width: 40px;
+  }
+  #steps2:before {
+    background-image: url(../img/elements/number2.svg);
+  }
+  #steps3:before {
+    background-image: url(../img/elements/number3.svg);
   }
 }
 
@@ -344,7 +393,7 @@
     }
   }
   .heading {
-    font-size: 49px;
+    font-size: $heading-fontsize;
     margin-bottom: 50px;
     text-align: center;
   }
@@ -419,7 +468,7 @@
       top: 20%;
       left: 31%;
       width: 69%;
-      height: 188%;
+      height: 100%;
       background: linear-gradient(
         to bottom left,
         transparent 0%,

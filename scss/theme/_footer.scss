@@ -62,13 +62,57 @@
             }
         }
     }
+    .contact{
+        display: flex;
+        img{
+            width: 30px;
+            margin-right: 10px;
+        }
+        a{
+            color: $primary-color2;
+            margin-right: 30px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        @media(max-width: 991px) {
+            display: grid;
+            grid-gap: 10px;
+        }
+    }
+    .links{
+        display: flex;
+        text-align: right;
+        justify-content: flex-end;
+        a{
+            margin-left: 20px;
+            display: block;
+            color: $primary-color2;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        @media(max-width: 991px) {
+            display: block;
+            margin-top: 30px;
+            text-align: left;
+            a{
+                margin: 0;
+            }
+        }
+    }
     .footer-bottom {
-        margin-top: 90px;
+        margin-top: 30px;
         @media(max-width: 991px) {
             margin-top: 20px;
         }
         .footer-text {
             color: $white;
+            text-align: center;
+            font-size: 0.9em;
+            @media(max-width: 991px) {
+                text-align: left;
+            }
             a,
             span {
                 color: $primary-color;

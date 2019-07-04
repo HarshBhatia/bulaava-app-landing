@@ -20,8 +20,12 @@
 }
 
 .header-scrolled {
-    background: rgba($primary-color, 0.9);
+    background: #fff;
+    box-shadow: -2px -4px 20px 0px rgba(32,41,50,0.12);
     transition: all 0.5s;
+    .nav-menu a{
+        color: #000;
+    }
 }
 
 @media(max-width:673px) {
@@ -149,8 +153,8 @@
     text-decoration: none;
     display: inline-block;
     color: $white;
-    font-weight: 500;
     font-size: 15px;
+    font-weight: bold;
     font-family: $title-font;
     text-transform: capitalize;
     outline: none;
@@ -218,9 +222,20 @@
     }
 }
 
-#mobile-nav-toggle i {
+#mobile-nav-toggle {
+    i {
+        color: $white;
+        font-weight: 900;
+        transition: all 250ms ease-out 0s;
+    }
+}
+.nav-scroll #mobile-nav-toggle i {
+    color: $black;
+    transition: all 250ms ease-out 0s;
+}
+.mobile-nav-active #mobile-nav-toggle i {
     color: $white;
-    font-weight: 900;
+    transition: all 250ms ease-out 0s;
 }
 
 @media (max-width: 960px) {
