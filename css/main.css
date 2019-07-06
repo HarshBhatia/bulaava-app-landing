@@ -48,7 +48,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.625em;
-  position: relative; }
+  position: relative;
+  background: #fff; }
 
 ol, ul {
   margin: 0;
