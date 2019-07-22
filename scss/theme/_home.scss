@@ -3,7 +3,7 @@ $heading-fontsize: 36px;
 .home-banner-area {
   background: url(../img/home-banner-bg.jpg) center;
   background-size: cover;
-  
+
   @media (max-width: 991px) {
     background-position: 20% 0;
   }
@@ -34,6 +34,62 @@ $heading-fontsize: 36px;
   font-weight: 600;
   word-spacing: 1.4px;
 }
+
+// faq section
+
+.faq {
+  margin-bottom: 12em;
+}
+
+.card {
+  border: none;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.card-header .faqexpander {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+
+.card-header .faqexpander:after {
+  content: "-";
+  font-size: 1.5em;
+  color: #6c757d;
+}
+
+.card-header.collapsed .faqexpander:after {
+  content: "+";
+  font-size: 1.5em;
+  color: #6c757d;
+}
+
+.accordionpointer {
+  cursor: pointer;
+}
+
+#accordion .card-header {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .faqexpander {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+// faq section end
 
 .figure {
   float: left;
@@ -102,6 +158,7 @@ $heading-fontsize: 36px;
   }
   p {
     margin-bottom: 45px;
+    margin-right: 20px;
   }
 }
 
@@ -664,7 +721,7 @@ $heading-fontsize: 36px;
   .generic-banner-content {
     h2 {
       line-height: 1.2em;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
       br {
         @include media-breakpoint-down(md) {
           display: none;
@@ -705,6 +762,14 @@ $heading-fontsize: 36px;
 .section-top-border {
   padding: 50px 0;
   border-top: 1px dotted #eee;
+}
+
+.section-gap-bottom {
+  padding-bottom: 150px;
+}
+
+.section-gap-top {
+  padding-top: 150px;
 }
 
 .switch-wrap {

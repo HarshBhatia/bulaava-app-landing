@@ -22,12 +22,16 @@
     <!-- Site Title -->
     <title>Bulaava</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
     <!--
-			CSS
-			============================================= -->
+    CSS
+    ============================================= -->
     <link rel="stylesheet" href="css/linearicons.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -49,11 +53,17 @@
           </div>
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li><a aria-label="Read more" href="about.html">About</a></li>
-              <li><a aria-label="Read more" href="pricing.html">Contact</a></li>
-              <li><a aria-label="Read more" href="pricing.html">Demo</a></li>
+              <li><a aria-label="About Us" href="#about">About</a></li>
+              <li><a aria-label="FAQs" href="#faqs">FAQs</a></li>
+              <li><a aria-label="Contact" href="#contact">Contact</a></li>
               <li>
-                <a aria-label="Read more" href="pricing.html">Install Now</a>
+                <a
+                  class="nav-download-button"
+                  target="_blank"
+                  aria-label="Read more"
+                  href="https://play.google.com/store/apps/details?id=wedding.invitation.videos"
+                  >Download</a
+                >
               </li>
             </ul>
           </nav>
@@ -76,28 +86,32 @@
             <p>
               Make an invitation video your guests can't say no to, using the
               Bulaava invitation video maker.
-              <ul id="facts-list">
-                <li class="fact"> <span class="figure"> 📹 </span>  100K+ videos made</li>
-                <li class="fact"><span class="figure"> ⬇️</span>  70K+ app downloads</li>
-                <li class="fact"><span class="figure"> 🌟 </span> 800+ user reviews</li>
-                <li class="fact"><span class="figure"> 👱🏻‍♂️</span>  4.4+ user ratings</li>
-              </ul>
             </p>
+            <ul id="facts-list">
+              <li class="fact">
+                <span class="figure"> 📹 </span> 100K+ Videos made
+              </li>
+              <li class="fact">
+                <span class="figure"> ⬇️</span> 70K+ App downloads
+              </li>
+              <li class="fact">
+                <span class="figure"> 🌟 </span> 1000+ User reviews
+              </li>
+              <li class="fact">
+                <span class="figure"> 👱🏻‍♂️</span> 4.4+ User ratings
+              </li>
+            </ul>
             <div class="download-button d-flex flex-row justify-content-start">
-              <div class="buttons flex-row d-flex">
-                <i class="fa fa-android" aria-hidden="true"></i>
-                <div class="desc">
-                  <a
-                    aria-label="Read more"
-                    href="https://play.google.com/store/apps/details?id=wedding.invitation.videos"
-                  >
-                    <p>
-                      <span>Download</span> <br />
-                      on Play Store
-                    </p>
-                  </a>
-                </div>
-              </div>
+              <a
+                aria-label="Read more"
+                href="https://play.google.com/store/apps/details?id=wedding.invitation.videos"
+              >
+                <img
+                  style="height: 80px"
+                  src="img/google-play-badge.png"
+                  alt="Download button"
+                />
+              </a>
             </div>
           </div>
           <div class="banner-img col-lg-4 col-md-6">
@@ -110,30 +124,30 @@
 
     <!-- Start fact Area -->
     <!-- <section class="fact-area">
-      <div class="container">
-        <div class="fact-box">
-          <div class="row align-items-center">
-            <div class="col single-fact">
-              <h2>100K+</h2>
-              <p>📹 Videos Made</p>
-            </div>
-            <div class="col single-fact">
-              <h2>60K+</h2>
-              <p>⬇️ App Downloads</p>
-            </div>
-            <div class="col single-fact">
-              <h2>500+</h2>
-              <p>🌟 User Reviews</p>
-            </div>
-            <div class="col single-fact">
-              <h2>4.3</h2>
-              <p>👱🏻‍♂️ User Ratings</p>
-            </div> -->
-            <!-- <div class="col single-fact">
-						<h2>15K+</h2>
-						<p>Pro User</p>
-					</div> -->
-          <!-- </div>
+  <div class="container">
+    <div class="fact-box">
+      <div class="row align-items-center">
+        <div class="col single-fact">
+          <h2>100K+</h2>
+          <p>📹 Videos Made</p>
+        </div>
+        <div class="col single-fact">
+          <h2>60K+</h2>
+          <p>⬇️ App Downloads</p>
+        </div>
+        <div class="col single-fact">
+          <h2>500+</h2>
+          <p>🌟 User Reviews</p>
+        </div>
+        <div class="col single-fact">
+          <h2>4.3</h2>
+          <p>👱🏻‍♂️ User Ratings</p>
+        </div> -->
+    <!-- <div class="col single-fact">
+          <h2>15K+</h2>
+          <p>Pro User</p>
+        </div> -->
+    <!-- </div>
         </div>
       </div>
     </section> -->
@@ -157,10 +171,10 @@
               elit, sed do eiusmod tempor.
             </p>
             <a
-              aria-label="Read more"
-              class="primary-btn text-uppercase"
-              href="#"
-              >Get Details</a
+            aria-label="Read more"
+            class="primary-btn text-uppercase"
+            href="#"
+            >Get Details</a
             >
           </div>
           <div class="col-lg-6 home-about-right home-about-right2">
@@ -196,12 +210,10 @@
     </section> -->
     <!-- End about Area -->
     <!-- Start about-video Area -->
-    <section class="about-video-area section-gap">
+
+    <section class="about-video-area section-gap-bottom">
       <div class="container">
         <h1 class="text-center">Get started</h1>
-        <p class="text-center">
-          Our invitation video maker makes it easy for you to create video invitations in really simple steps.
-        </p>
         <div class="d-flex justify-content-center mt-3">
           <div class="col-md-8 col-lg-8">
             <div
@@ -236,7 +248,8 @@
                 Choose a design you like.
               </h3>
               <p class="text-center">
-                We have a variety of designs to choose from ranging from Western to Ethnic.
+                We have a variety of designs to choose from ranging from Western
+                to Ethnic.
               </p>
             </div>
           </div>
@@ -252,7 +265,8 @@
                 Fill out your wedding details.
               </h3>
               <p class="text-center">
-                Just put everything necessary for your guests to know in your form.
+                Just put everything necessary for your guests to know in your
+                form.
               </p>
             </div>
           </div>
@@ -265,10 +279,11 @@
           >
             <div class="tutorialcard pt-3">
               <h3 id="steps3" class="text-center pt-3">
-               Download your video or edit it if you want to change something.
+                Download your awesome video.
               </h3>
               <p class="text-center">
-               We provide unlimited edits on your video even after download too.
+                We provide unlimited edits on your video even after download
+                too.
               </p>
             </div>
           </div>
@@ -277,8 +292,267 @@
     </section>
     <!-- End about-video Area -->
 
+    <section id="about" class="about-us-area section-gap-bottom">
+      <div class="container">
+        <h1 class="text-center">About Us</h1>
+        <p>
+          We realise the value of celebration of the most happening events in
+          your life. What could be better than celebrating the most beautiful
+          and mirthful events with your loved ones! Bulaava brings you the most
+          delightful yet cost effective way of inviting them to be a part of
+          your perfect day.
+        </p>
+        <h5>
+          Values
+        </h5>
+        <p>
+          Our firm belief is that all we do should be done with excellence. How
+          about starting it with a perfect invite? We are dedicated to giving
+          you the very best of our services with a focus on uniqueness, customer
+          service and dependability.
+        </p>
+        <h5>Services</h5>
+        <p>
+          We provide e-invites for multiple events like weddings, anniversaries
+          and house warming parties. Founded in December 2017, Bulaava has come
+          a long way from its beginning with the love and blessings of the
+          people who gave us the impetus to turn a dream, an inspiration and
+          hard work into reality. So, let's celebrate together! We look forward
+          to being a part of your big day 😊
+        </p>
+      </div>
+    </section>
+    <section id="faqs" class="faq-area section-gap-bottom">
+      <div class="container">
+        <h2 id="faq" class="text-center">FAQs</h2>
+
+        <div id="accordion">
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading1"
+              data-toggle="collapse"
+              data-target="#collapse1"
+              aria-expanded="true"
+            >
+              <p class="mb-0" aria-expanded="true" aria-controls="collapse1">
+                What is Bulaava?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+
+            <div
+              id="collapse1"
+              class="collapse"
+              aria-labelledby="heading1"
+              data-parent="#accordion"
+              style=""
+            >
+              <div class="card-body">
+                Bulaava is an e-invitation video making company, We make all
+                kinds of online invitation videos that you can share easily to
+                all your guests.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading2"
+              data-toggle="collapse"
+              data-target="#collapse2"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse2">
+                Why e-invite?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+            <div
+              id="collapse2"
+              class="collapse"
+              aria-labelledby="heading2"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                E-invite is the latest trend among the people as it lets you
+                invite a large number of guests in an easy, cost effective and a
+                delightful way. Also save a plant by using online wedding
+                invitation, so mother nature will love you even more :)
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading3"
+              data-toggle="collapse"
+              data-target="#collapse3"
+              aria-expanded="false"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse3">
+                How can I make my video ?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+            <div
+              id="collapse3"
+              class="collapse"
+              aria-labelledby="heading3"
+              data-parent="#accordion"
+              style=""
+            >
+              <div class="card-body">
+                The order placement process is easier than you could imagine !
+                <ul>
+                  <li>
+                    1) Choose a template/video appearing on our website and
+                    select it.
+                  </li>
+                  <li>
+                    2) Click the "Make video" button on the product page,
+                  </li>
+                  <li>
+                    3) A form will appear to you, asking details about your
+                    event, for example: bride's and groom's name, date of the
+                    event, time, venue,pictures (if any), etc.
+                  </li>
+                  <li>
+                    4) Fill the form and submit it.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer"
+              id="heading4"
+              data-toggle="collapse"
+              data-target="#collapse4"
+              aria-expanded="false"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse4">
+                How much time does it take to get the video?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+            <div
+              id="collapse4"
+              class="collapse show"
+              aria-labelledby="heading4"
+              data-parent="#accordion"
+              style=""
+            >
+              <div class="card-body">
+                It usually takes 24 hours for us to deliver the video. Plan
+                accordingly !:)
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading5"
+              data-toggle="collapse"
+              data-target="#collapse5"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse5">
+                Can i make changes in my video for more than once ?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+            <div
+              id="collapse5"
+              class="collapse"
+              aria-labelledby="heading5"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Yes, sure.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading6"
+              data-toggle="collapse"
+              data-target="#collapse6"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse6">
+                Can i apply for making changes even after the purchase ?
+              </p>
+              <span class="faqexpander"></span>
+            </div>
+            <div
+              id="collapse6"
+              class="collapse"
+              aria-labelledby="heading6"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Yes, you can make changes or apply for the edits before/after
+                the purchase. Depending on the type of customization, they may
+                be chargeable or free.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading7"
+              data-toggle="collapse"
+              data-target="#collapse7"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse7">
+                How can I make the payment?
+                <span class="faqexpander"></span>
+              </p>
+            </div>
+
+            <div
+              id="collapse7"
+              class="collapse"
+              aria-labelledby="heading7"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                We currently accept payments using Net Banking/Debit Card/Credit
+                Card/PayTM/Bank Transfer.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="card-header accordionpointer collapsed"
+              id="heading8"
+              data-toggle="collapse"
+              data-target="#collapse8"
+            >
+              <p class="mb-0" aria-expanded="false" aria-controls="collapse8">
+                I still have some questions.
+                <span class="faqexpander"></span>
+              </p>
+            </div>
+
+            <div
+              id="collapse8"
+              class="collapse"
+              aria-labelledby="heading8"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                You can always contact us at support@bulaava.in
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Start Testimonials Area -->
-    <section class="testimonials-area section-gap-top">
+    <section class="testimonials-area section-gap-bottom">
       <div class="container">
         <h2 class="heading">What our users say</h2>
         <div class="testi-slider owl-carousel" data-slider-id="1">
@@ -479,7 +753,7 @@
     <!-- End Testimonials Area -->
 
     <!-- Start Screenshot Area -->
-    <section class="screenshot-area section-gap-top">
+    <section class="screenshot-area-top section-gap-bottom">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6">
@@ -487,6 +761,7 @@
               <h2>App Screenshots</h2>
               <p>
                 Here are some screenshots of the app we made with all our love.
+                ❤️
               </p>
             </div>
           </div>
@@ -513,127 +788,129 @@
 
     <!-- Start Pricing Area -->
     <!-- <section class="pricing-area">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6">
-            <div class="section-title text-center">
-              <h2>Suitable Pricing Plans</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-price">
-              <div class="top-sec d-flex justify-content-between">
-                <div class="top-left">
-                  <h4>Standard</h4>
-                  <p>For the <br />individuals</p>
-                </div>
-                <div class="top-right">
-                  <h1>£199</h1>
-                </div>
-              </div>
-              <div class="end-sec">
-                <ul>
-                  <li>2.5 GB Free Photos</li>
-                  <li>Secure Online Transfer Indeed</li>
-                  <li>Unlimited Styles for interface</li>
-                  <li>Reliable Customer Service</li>
-                  <li>Manual Backup Provided</li>
-                </ul>
-                <button class="primary-btn price-btn mt-20">
-                  Purchase Plan
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-price">
-              <div class="top-sec d-flex justify-content-between">
-                <div class="top-left">
-                  <h4>Business</h4>
-                  <p>For <br />small Company</p>
-                </div>
-                <div class="top-right">
-                  <h1>£399</h1>
-                </div>
-              </div>
-              <div class="end-sec">
-                <ul>
-                  <li>2.5 GB Free Photos</li>
-                  <li>Secure Online Transfer Indeed</li>
-                  <li>Unlimited Styles for interface</li>
-                  <li>Reliable Customer Service</li>
-                  <li>Manual Backup Provided</li>
-                </ul>
-                <button class="primary-btn price-btn mt-20">
-                  Purchase Plan
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-price">
-              <div class="top-sec d-flex justify-content-between">
-                <div class="top-left">
-                  <h4>Ultimate</h4>
-                  <p>For <br />large Company</p>
-                </div>
-                <div class="top-right">
-                  <h1>£499</h1>
-                </div>
-              </div>
-              <div class="end-sec">
-                <ul>
-                  <li>2.5 GB Free Photos</li>
-                  <li>Secure Online Transfer Indeed</li>
-                  <li>Unlimited Styles for interface</li>
-                  <li>Reliable Customer Service</li>
-                  <li>Manual Backup Provided</li>
-                </ul>
-                <button class="primary-btn price-btn mt-20">
-                  Purchase Plan
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
+                                              <div class="container">
+                                                <div class="row d-flex justify-content-center">
+                                                  <div class="col-lg-6">
+                                                    <div class="section-title text-center">
+                                                      <h2>Suitable Pricing Plans</h2>
+                                                      <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                  <div class="col-lg-4 col-md-6">
+                                                    <div class="single-price">
+                                                      <div class="top-sec d-flex justify-content-between">
+                                                        <div class="top-left">
+                                                          <h4>Standard</h4>
+                                                          <p>For the <br />individuals</p>
+                                                        </div>
+                                                        <div class="top-right">
+                                                          <h1>£199</h1>
+                                                        </div>
+                                                      </div>
+                                                      <div class="end-sec">
+                                                        <ul>
+                                                          <li>2.5 GB Free Photos</li>
+                                                          <li>Secure Online Transfer Indeed</li>
+                                                          <li>Unlimited Styles for interface</li>
+                                                          <li>Reliable Customer Service</li>
+                                                          <li>Manual Backup Provided</li>
+                                                        </ul>
+                                                        <button class="primary-btn price-btn mt-20">
+                                                          Purchase Plan
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-4 col-md-6">
+                                                    <div class="single-price">
+                                                      <div class="top-sec d-flex justify-content-between">
+                                                        <div class="top-left">
+                                                          <h4>Business</h4>
+                                                          <p>For <br />small Company</p>
+                                                        </div>
+                                                        <div class="top-right">
+                                                          <h1>£399</h1>
+                                                        </div>
+                                                      </div>
+                                                      <div class="end-sec">
+                                                        <ul>
+                                                          <li>2.5 GB Free Photos</li>
+                                                          <li>Secure Online Transfer Indeed</li>
+                                                          <li>Unlimited Styles for interface</li>
+                                                          <li>Reliable Customer Service</li>
+                                                          <li>Manual Backup Provided</li>
+                                                        </ul>
+                                                        <button class="primary-btn price-btn mt-20">
+                                                          Purchase Plan
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-4 col-md-6">
+                                                    <div class="single-price">
+                                                      <div class="top-sec d-flex justify-content-between">
+                                                        <div class="top-left">
+                                                          <h4>Ultimate</h4>
+                                                          <p>For <br />large Company</p>
+                                                        </div>
+                                                        <div class="top-right">
+                                                          <h1>£499</h1>
+                                                        </div>
+                                                      </div>
+                                                      <div class="end-sec">
+                                                        <ul>
+                                                          <li>2.5 GB Free Photos</li>
+                                                          <li>Secure Online Transfer Indeed</li>
+                                                          <li>Unlimited Styles for interface</li>
+                                                          <li>Reliable Customer Service</li>
+                                                          <li>Manual Backup Provided</li>
+                                                        </ul>
+                                                        <button class="primary-btn price-btn mt-20">
+                                                          Purchase Plan
+                                                        </button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </section> -->
     <!-- End Pricing Area -->
 
     <!-- Start Footer Area -->
-    <footer class="footer-area section-small-gap">
+    <footer id="contact" class="footer-area section-small-gap">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-7">
             <ul class="contact">
               <li>
-                <a aria-label="Read more" id="contact1" href="tel:918448449254"
-                  ><img class="" src="img/contact (1).png" alt="" />
+                <img class="" src="img/contact (1).png" alt="" />
+                <a aria-label="Read more" id="contact1" href="tel:918448449254">
                   +918448449254</a
                 >
               </li>
               <li>
+                <img class="" src="img/contact (2).png" alt="" />
                 <a
                   aria-label="Read more"
                   id="contact2"
                   href="mailto:support@bulaava.in"
-                  ><img class="" src="img/contact (2).png" alt="" />
+                >
                   support@bulaava.in</a
                 >
               </li>
               <li>
+                <img class="" src="img/contact (3).png" alt="" />
                 <a
                   aria-label="Read more"
                   id="contact3"
                   href="https://wa.me/918224024281"
-                  ><img class="" src="img/contact (3).png" alt="" />
+                >
                   918224024281</a
                 >
               </li>
@@ -651,14 +928,15 @@
           <p class="footer-text m-0 col-md-12">
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy; <em style="font-style: normal" id="year"></em>
-            All rights reserved | This template is made with
+            All rights reserved | Bulaava is a product of
             <i class="fa fa-heart-o" aria-hidden="true"></i> by
             <a
               aria-label="Read more"
-              href="https://colorlib.com"
+              href="https://spiring.co"
               target="_blank"
               rel="noopener"
-              >Colorlib</a
+              class="parent-company-text"
+              >spiring.</a
             >
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
@@ -676,9 +954,9 @@
     <script src="js/tilt.jquery.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <!-- <script
-      type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
-    ></script> -->
+                                              type="text/javascript"
+                                              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"
+                                              ></script> -->
     <script src="js/easing.min.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/superfish.min.js"></script>
