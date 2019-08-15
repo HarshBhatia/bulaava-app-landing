@@ -41,7 +41,7 @@
 
 @media(max-width:673px) {
     #logo {
-        margin-left: 20px;
+        margin-left: 5px;
     }
 }
 
@@ -64,6 +64,8 @@
 #header #logo img {
     padding: 0;
     margin: 0;
+    height: 45px;
+    padding: 8px;
 }
 
 @media (max-width: 768px) {
@@ -71,6 +73,7 @@
         font-size: 28px;
     }
     #header #logo img {
+        padding: 5px;
         max-height: 40px;
     }
 }
